@@ -1,1 +1,36 @@
-<h1>Hello</h1>
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Financial Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <h1>Financial Dashboard</h1>
+    </header>
+
+    <section class="dashboard">
+        <button onclick="loadItem('items/item1.md')">Item 1</button>
+        <button onclick="loadItem('items/item2.md')">Item 2</button>
+        <button onclick="loadItem('items/item3.md')">Item 3</button>
+    </section>
+
+    <aside class="sidebar">
+        <h2>Items</h2>
+        <ul>
+            <li onclick="loadItem('items/item1.md')">Item 1</li>
+            <li onclick="loadItem('items/item2.md')">Item 2</li>
+            <li onclick="loadItem('items/item3.md')">Item 3</li>
+        </ul>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
